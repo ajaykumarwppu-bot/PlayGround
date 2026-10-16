@@ -1,0 +1,23 @@
+CREDITS — "Complete Any Chapter in 5 Steps" (media/chapter-5-steps.mp4)
+=======================================================================
+
+Music
+  "Carefree" — Kevin MacLeod (incompetech.com)
+  Licensed under Creative Commons: By Attribution 4.0
+  https://creativecommons.org/licenses/by/4.0/
+
+Fonts (SIL Open Font License 1.1, files in remotion/public/fonts/)
+  Anton                          — Vernon Adams (OFL-Anton.txt)
+  Archivo Black                  — Omnibus-Type (OFL-ArchivoBlack.txt)
+  Inter                          — Rasmus Andersson (OFL-Inter.txt)
+  Baloo 2                        — Ek Type (OFL-Baloo2.txt)
+
+Sound effects
+  All SFX synthesized procedurally in-project (remotion/scripts/generate_assets.mjs).
+  No third-party samples used.
+
+Voice-over
+  Generated with edge-tts (Microsoft Edge voices, hi-IN-MadhurNeural).
+  Script written in-project (remotion/content/script.json).
+
+Rendered with Remotion 4.0.535 (https://remotion.dev).

@@ -1,0 +1,160 @@
+{
+  "voice": "hi-IN-MadhurNeural",
+  "rate": "+35%",
+  "pitch": "+0Hz",
+  "volume": "+0%",
+  "segments": [
+    {
+      "id": "hook",
+      "scene": "hook",
+      "vo": "Complete any chapter, सिर्फ़ पाँच steps में।",
+      "display": ["complete", "any", "chapter", "sirf", "paanch", "steps", "mein"],
+      "pauseAfterFrames": 12,
+      "sfx": [
+        {"word": "complete", "name": "stamp", "vol": 0.95},
+        {"word": "chapter", "name": "rip", "vol": 0.8},
+        {"word": "paanch", "name": "whoosh", "vol": 0.65},
+        {"word": "steps", "name": "ding", "vol": 0.75}
+      ]
+    },
+    {
+      "id": "problem",
+      "scene": "problem",
+      "vo": "समझ नहीं आता कहाँ से start करें, क्या पढ़ें, कैसे पढ़ें? तो ये video skip मत करना।",
+      "display": ["samajh", "nahi", "aata", "kahan", "se", "start", "karein", "kya", "padhein", "kaise", "padhein", "to", "ye", "video", "skip", "mat", "karna"],
+      "pauseAfterFrames": 10,
+      "sfx": [
+        {"at": 0.0, "name": "slap", "vol": 0.8},
+        {"word": "kahan", "name": "pop", "vol": 0.7},
+        {"word": "padhein", "wordIndex": 0, "name": "buzz", "vol": 0.6},
+        {"word": "kaise", "name": "pop", "vol": 0.7},
+        {"word": "skip", "name": "rip", "vol": 0.85}
+      ]
+    },
+    {
+      "id": "roadmap",
+      "scene": "roadmap",
+      "vo": "क्योंकि आज मैं तुम्हारे लिए लाया हूँ एक simple पाँच step roadmap, जिससे किसी भी chapter को systematically complete कर सकते हो।",
+      "display": ["kyunki", "aaj", "main", "tumhare", "liye", "laaya", "hoon", "ek", "simple", "paanch", "step", "roadmap", "jisse", "kisi", "bhi", "chapter", "ko", "systematically", "complete", "kar", "sakte", "ho"],
+      "pauseAfterFrames": 10,
+      "sfx": [
+        {"word": "laaya", "name": "whoosh", "vol": 0.6},
+        {"word": "paanch", "offsetFrames": 0, "name": "pop", "vol": 0.75},
+        {"word": "paanch", "offsetFrames": 5, "name": "pop", "vol": 0.7},
+        {"word": "paanch", "offsetFrames": 10, "name": "pop", "vol": 0.72},
+        {"word": "paanch", "offsetFrames": 15, "name": "pop", "vol": 0.7},
+        {"word": "paanch", "offsetFrames": 20, "name": "pop", "vol": 0.75},
+        {"word": "roadmap", "name": "ding", "vol": 0.7},
+        {"word": "complete", "name": "stamp", "vol": 0.8}
+      ]
+    },
+    {
+      "id": "step1",
+      "scene": "step1",
+      "vo": "Step one, अपना chapter choose करो। तय करो कौन सा chapter है, और कब तक खत्म करना है। Target और deadline fix कर लो।",
+      "display": ["step", "one", "apna", "chapter", "choose", "karo", "tay", "karo", "kaun", "sa", "chapter", "hai", "aur", "kab", "tak", "khatam", "karna", "hai", "target", "aur", "deadline", "fix", "kar", "lo"],
+      "pauseAfterFrames": 8,
+      "sfx": [
+        {"word": "one", "name": "whoosh", "vol": 0.7},
+        {"word": "choose", "name": "flip", "vol": 0.8},
+        {"word": "kaun", "name": "pop", "vol": 0.6},
+        {"word": "deadline", "name": "stamp", "vol": 0.9},
+        {"word": "lo", "name": "ding", "vol": 0.7}
+      ]
+    },
+    {
+      "id": "step2",
+      "scene": "step2",
+      "vo": "Step two, सारे resources एक जगह collect करो। Books, notes, PDFs, lectures, जो भी चाहिए, पहले से ready रखो, ताकि पढ़ते वक्त ढूँढने में time waste न हो।",
+      "display": ["step", "two", "saare", "resources", "ek", "jagah", "collect", "karo", "books", "notes", "pdfs", "lectures", "jo", "bhi", "chahiye", "pehle", "se", "ready", "rakho", "taaki", "padhte", "waqt", "dhoondhne", "mein", "time", "waste", "na", "ho"],
+      "pauseAfterFrames": 8,
+      "sfx": [
+        {"word": "two", "name": "whoosh", "vol": 0.7},
+        {"word": "resources", "name": "slap", "vol": 0.75},
+        {"word": "books", "name": "whoosh", "vol": 0.5},
+        {"word": "notes", "name": "whoosh", "vol": 0.6},
+        {"word": "pdfs", "name": "whoosh", "vol": 0.7},
+        {"word": "lectures", "name": "whoosh", "vol": 0.8},
+        {"word": "ready", "name": "stamp", "vol": 0.85},
+        {"word": "ho", "name": "ding", "vol": 0.7}
+      ]
+    },
+    {
+      "id": "step3",
+      "scene": "step3",
+      "vo": "Step three, पहले chapter का overview लो। एक बार quickly read कर लो, या PDF किसी AI tool को दे दो, और topic-wise overview निकलवा लो। अभी कुछ याद नहीं करना, बस समझना है कि chapter में कौन कौन से concepts हैं।",
+      "display": ["step", "three", "pehle", "chapter", "ka", "overview", "lo", "ek", "baar", "quickly", "read", "kar", "lo", "ya", "pdf", "kisi", "ai", "tool", "ko", "de", "do", "aur", "topic-wise", "overview", "nikalwa", "lo", "abhi", "kuch", "yaad", "nahi", "karna", "bas", "samajhna", "hai", "ki", "chapter", "mein", "kaun", "kaun", "se", "concepts", "hain"],
+      "pauseAfterFrames": 8,
+      "sfx": [
+        {"word": "three", "name": "whoosh", "vol": 0.7},
+        {"word": "overview", "wordIndex": 0, "name": "pop", "vol": 0.7},
+        {"word": "read", "name": "flip", "vol": 0.8},
+        {"word": "ai", "name": "pop", "vol": 0.75},
+        {"word": "topic-wise", "name": "whoosh", "vol": 0.6},
+        {"word": "concepts", "name": "pop", "vol": 0.7},
+        {"word": "nahi", "name": "stamp", "vol": 0.85},
+        {"word": "hain", "name": "ding", "vol": 0.7}
+      ]
+    },
+    {
+      "id": "step4",
+      "scene": "step4",
+      "vo": "Step four, एक time पे एक concept उठाओ। अच्छे से समझो, और फिर बिना देखे अपने words में explain करो। अगर खुद explain कर पाते हो, तो concept clear है। ऐसे ही एक एक concept cover करते जाओ।",
+      "display": ["step", "four", "ek", "time", "pe", "ek", "concept", "uthao", "acche", "se", "samjho", "aur", "phir", "bina", "dekhe", "apne", "words", "mein", "explain", "karo", "agar", "khud", "explain", "kar", "paate", "ho", "to", "concept", "clear", "hai", "aise", "hi", "ek", "ek", "concept", "cover", "karte", "jao"],
+      "pauseAfterFrames": 8,
+      "sfx": [
+        {"word": "four", "name": "whoosh", "vol": 0.7},
+        {"word": "concept", "wordIndex": 0, "name": "flip", "vol": 0.8},
+        {"word": "explain", "wordIndex": 0, "name": "pop", "vol": 0.65},
+        {"word": "explain", "wordIndex": 1, "name": "ding", "vol": 0.7},
+        {"word": "jao", "name": "tick", "vol": 0.8}
+      ]
+    },
+    {
+      "id": "step5",
+      "scene": "step5",
+      "vo": "Step five, खुद का test लो। छोटा mock test दो, या ChatGPT से concept-wise test बनवाओ। बिना notes देखे solve करो, mistakes check करो, और जहाँ problem आए, उस concept को दोबारा revise करो।",
+      "display": ["step", "five", "khud", "ka", "test", "lo", "chhota", "mock", "test", "do", "ya", "chatgpt", "se", "concept-wise", "test", "banwao", "bina", "notes", "dekhe", "solve", "karo", "mistakes", "check", "karo", "aur", "jahan", "problem", "aaye", "us", "concept", "ko", "dobara", "revise", "karo"],
+      "pauseAfterFrames": 8,
+      "sfx": [
+        {"word": "five", "name": "whoosh", "vol": 0.7},
+        {"word": "test", "wordIndex": 0, "name": "slap", "vol": 0.8},
+        {"word": "mock", "name": "stamp", "vol": 0.8},
+        {"word": "solve", "name": "ding", "vol": 0.7},
+        {"word": "mistakes", "name": "buzz", "vol": 0.65},
+        {"word": "problem", "name": "pop", "vol": 0.7},
+        {"word": "revise", "name": "snip", "vol": 0.8}
+      ]
+    },
+    {
+      "id": "bonus",
+      "scene": "bonus",
+      "vo": "Bonus tip, अगर notes बनाने हैं, तो concept समझते वक्त उसकी short summary अपने words में लिख लो। और AI से summary छोटी करने में help ले सकते हो।",
+      "display": ["bonus", "tip", "agar", "notes", "banane", "hain", "to", "concept", "samajhte", "waqt", "uski", "short", "summary", "apne", "words", "mein", "likh", "lo", "aur", "ai", "se", "summary", "chhoti", "karne", "mein", "help", "le", "sakte", "ho"],
+      "pauseAfterFrames": 8,
+      "sfx": [
+        {"word": "bonus", "name": "slap", "vol": 0.85},
+        {"word": "summary", "wordIndex": 0, "name": "pop", "vol": 0.7},
+        {"word": "likh", "name": "tick", "vol": 0.75},
+        {"word": "chhoti", "name": "snip", "vol": 0.7},
+        {"word": "help", "name": "ding", "vol": 0.7}
+      ]
+    },
+    {
+      "id": "outro",
+      "scene": "outro",
+      "vo": "तो ये था किसी भी chapter को complete करने का पाँच step roadmap। और बड़े chapter को छोटे छोटे parts में कैसे break करें? वो जानने के लिए follow करो। मिलते हैं next video में।",
+      "display": ["to", "ye", "tha", "kisi", "bhi", "chapter", "ko", "complete", "karne", "ka", "paanch", "step", "roadmap", "aur", "bade", "chapter", "ko", "chhote", "chhote", "parts", "mein", "kaise", "break", "karein", "wo", "jaanne", "ke", "liye", "follow", "karo", "milte", "hain", "next", "video", "mein"],
+      "pauseAfterFrames": 8,
+      "sfx": [
+        {"at": 0.0, "name": "whoosh", "vol": 0.65},
+        {"word": "paanch", "name": "pop", "vol": 0.7},
+        {"word": "roadmap", "name": "ding", "vol": 0.7},
+        {"word": "parts", "name": "flip", "vol": 0.8},
+        {"word": "follow", "name": "riser", "vol": 0.35},
+        {"word": "karo", "name": "stamp", "vol": 0.85},
+        {"word": "video", "name": "ding", "vol": 0.8}
+      ]
+    }
+  ]
+}

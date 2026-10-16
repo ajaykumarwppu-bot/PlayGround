@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PaperCut Studio — Remotion Style Motion Graphics</title>
+<style>
+  :root{
+    --paper:#f6efe0; --paper2:#efe3cb; --ink:#2b2118;
+    --sky1:#bfe3ec; --sky2:#e8f3e8;
+    --sun:#f2b134; --mount1:#9db89a; --mount2:#7a9e7e; --mount3:#5a7d5e;
+    --water:#7fb8ad; --accent:#e4572e; --accent2:#29335c;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; font-family:Georgia,'Times New Roman',serif; color:var(--ink);
+    background:
+      radial-gradient(circle at 20% 20%, #fff8 0 2px, transparent 3px),
+      radial-gradient(circle at 80% 10%, #fff6 0 2px, transparent 3px),
+      repeating-linear-gradient(0deg, #e9dcc2 0 2px, #f6efe0 2px 26px);
+    min-height:100vh;
+  }
+  header{
+    max-width:1100px; margin:0 auto; padding:28px 20px 10px; display:flex; gap:16px; align-items:center; flex-wrap:wrap;
+  }
+  .badge{
+    background:var(--ink); color:var(--paper); padding:6px 12px; border-radius:100px;
+    font-family:system-ui,sans-serif; font-size:12px; letter-spacing:.12em; text-transform:uppercase;
+    box-shadow:3px 3px 0 #c9b896;
+  }
+  h1{font-size:clamp(28px,5vw,52px); line-height:.95; margin:6px 0; letter-spacing:-.02em}
+  h1 span{background:var(--accent); color:#fff; padding:0 10px; border-radius:6px; transform:rotate(-2deg); display:inline-block; box-shadow:3px 3px 0 var(--ink)}
+  p.sub{font-family:system-ui,sans-serif; max-width:62ch; line-height:1.5; color:#5a4d3d}
+  main{max-width:1100px; margin:0 auto; padding:10px 20px 40px; display:grid; grid-template-columns:1.4fr .9fr; gap:18px}
+  @media(max-width:860px){main{grid-template-columns:1fr}}
+  .stage-wrap{
+    background:var(--paper); border:3px solid var(--ink); border-radius:18px; overflow:hidden;
+    box-shadow:8px 8px 0 var(--ink); position:relative;
+  }
+  .stage-top{display:flex; justify-content:space-between; align-items:center; padding:12px 14px; border-bottom:2px dashed var(--ink); font-family:system-ui,sans-serif; font-size:13px}
+  .dots{display:flex; gap:6px} .dots i{width:12px; height:12px; border-radius:50%; border:2px solid var(--ink); display:block}
+  #stage{position:relative; height:420px; overflow:hidden; background:linear-gradient(180deg,var(--sky1),var(--sky2) 62%, #f6efe0 62%);}
+  /* paper layers */
+  .layer{position:absolute; inset:0; pointer-events:none}
+  .sun{
+    position:absolute; width:130px; height:130px; border-radius:50%;
+    background:radial-gradient(circle at 35% 35%, #ffe9a8, var(--sun));
+    border:3px solid var(--ink); box-shadow:6px 6px 0 rgba(43,33,24,.25), inset -6px -6px 0 #d68f1f;
+    top:46px; left:50%; margin-left:-65px;
+  }
+  .sun::after{content:""; position:absolute; inset:-18px; border:2px dashed rgba(43,33,24,.35); border-radius:50%}
+  .cloud{
+    position:absolute; background:#fffdf4; border:3px solid var(--ink); border-radius:100px;
+    box-shadow:5px 5px 0 rgba(43,33,24,.2); height:54px;
+  }
+  .cloud::before,.cloud::after{content:""; position:absolute; background:inherit; border:3px solid var(--ink); border-radius:50%}
+  .c1{width:170px; top:66px; left:6%} .c1::before{width:62px; height:62px; top:-32px; left:22px} .c1::after{width:44px; height:44px; top:-22px; left:88px}
+  .c2{width:130px; top:132px; right:8%; transform:scale(.85)} .c2::before{width:52px; height:52px; top:-26px; left:18px} .c2::after{width:36px; height:36px; top:-16px; left:70px}
+  .bird{position:absolute; font-size:22px; font-family:system-ui}
+  .mount{position:absolute; bottom:38%; width:120%; left:-10%; height:180px; border-top:3px solid var(--ink)}
+  .m1{background:var(--mount1); clip-path:polygon(0 100%, 12% 20%, 24% 100%, 36% 35%, 50% 100%, 63% 15%, 76% 100%, 88% 30%, 100% 100%); box-shadow:0 6px 0 rgba(0,0,0,.1)}
+  .m2{background:var(--mount2); clip-path:polygon(0 100%, 8% 45%, 20% 100%, 32% 25%, 46% 100%, 58% 40%, 72% 100%, 84% 20%, 100% 100%)}
+  .m3{background:var(--mount3); bottom:22%; clip-path:polygon(0 100%, 15% 30%, 30% 100%, 45% 20%, 62% 100%, 78% 35%, 100% 100%)}
+  .ground{position:absolute; bottom:0; left:0; right:0; height:22%; background:linear-gradient(#8db17f,#6f9570); border-top:3px solid var(--ink)}
+  .tree{position:absolute; bottom:18%; width:64px; text-align:center}
+  .tree .top{width:56px; height:56px; margin:0 auto; background:#2f5d34; border:3px solid var(--ink); border-radius:50% 50% 50% 8px; transform:rotate(-6deg); box-shadow:4px 4px 0 rgba(0,0,0,.2)}
+  .tree .trunk{width:12px; height:28px; background:#6b4a2f; border:2px solid var(--ink); margin:-4px auto 0}
+  .river{position:absolute; bottom:0; left:32%; width:36%; height:22%; background:linear-gradient(180deg,#bfe9e0,var(--water)); border-left:3px solid var(--ink); border-right:3px solid var(--ink); overflow:hidden}
+  .river::after{content:"≈ ≈ ≈ ≈ ≈"; position:absolute; top:14px; left:0; right:0; text-align:center; opacity:.6}
+  .title-card{
+    position:absolute; left:16px; bottom:24%; background:#fffdf4; border:3px solid var(--ink); border-radius:12px;
+    padding:10px 14px; box-shadow:5px 5px 0 var(--ink); transform:rotate(-2deg); max-width:280px;
+  }
+  .title-card h2{margin:0; font-size:26px} .title-card small{font-family:system-ui; letter-spacing:.14em}
+  .grain{position:absolute; inset:0; opacity:.18; mix-blend-mode:multiply;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)' opacity='.6'/%3E%3C/svg%3E");}
+  .controls{padding:14px; border-top:3px solid var(--ink); background:var(--paper2); font-family:system-ui,sans-serif}
+  .row{display:flex; gap:10px; flex-wrap:wrap; align-items:center}
+  button{
+    font:inherit; font-weight:700; border:2px solid var(--ink); border-radius:100px; padding:9px 16px; cursor:pointer;
+    background:#fffdf4; box-shadow:3px 3px 0 var(--ink);
+  }
+  button:active{transform:translate(2px,2px); box-shadow:1px 1px 0 var(--ink)}
+  button.primary{background:var(--accent); color:white}
+  button.dark{background:var(--accent2); color:white}
+  input[type=range]{flex:1; min-width:160px; accent-color:var(--accent)}
+  .scenes{display:flex; gap:8px; margin-top:10px}
+  .scenes button.sel{outline:3px solid var(--accent); background:#fff}
+  .meta{display:flex; justify-content:space-between; font-size:12px; margin-top:8px; opacity:.8}
+  .panel{background:#fffdf4; border:3px solid var(--ink); border-radius:18px; box-shadow:8px 8px 0 var(--ink); overflow:hidden}
+  .panel h3{margin:0; padding:12px 14px; border-bottom:2px dashed var(--ink); font-family:system-ui; font-size:13px; letter-spacing:.08em; text-transform:uppercase}
+  .panel .body{padding:14px; font-family:system-ui,sans-serif; font-size:14px; line-height:1.6}
+  pre{background:#1e1a14; color:#ffe9b8; padding:12px; border-radius:12px; overflow:auto; font-size:12px; line-height:1.5}
+  .layers label{display:flex; gap:8px; align-items:center; margin:6px 0}
+  footer{max-width:1100px; margin:0 auto; padding:0 20px 30px; font-family:system-ui; font-size:13px; opacity:.8}
+  .hero-wrap{max-width:1100px; margin:0 auto; padding:10px 20px 0; display:grid; grid-template-columns:.95fr 1.25fr; gap:18px; align-items:start}
+  @media(max-width:860px){.hero-wrap{grid-template-columns:1fr}}
+  .hero-player{background:var(--paper); border:3px solid var(--ink); border-radius:18px; box-shadow:8px 8px 0 var(--ink); padding:14px}
+  .hero-player video{width:100%; max-height:76vh; aspect-ratio:9/16; display:block; margin:0 auto; background:#000; border:2px solid var(--ink); border-radius:12px}
+  .hero-info{background:#fffdf4; border:3px solid var(--ink); border-radius:18px; box-shadow:8px 8px 0 var(--ink); padding:16px}
+  .hero-info h2{margin:.25em 0; font-size:clamp(22px,3vw,36px); line-height:1.05}
+  .chiprow{display:flex; gap:8px; flex-wrap:wrap; margin:12px 0}
+  .chip{font-family:system-ui,sans-serif; font-size:12px; border:2px solid var(--ink); border-radius:100px; padding:4px 10px; background:var(--paper); box-shadow:2px 2px 0 #c9b896}
+  .hero-info a.btn{display:inline-block; font-family:system-ui; font-weight:700; text-decoration:none; border:2px solid var(--ink); border-radius:100px; padding:9px 16px; background:var(--accent); color:#fff; box-shadow:3px 3px 0 var(--ink); margin:4px 8px 4px 0}
+  .cr{font-family:system-ui; font-size:12px; opacity:.75; line-height:1.6}
+  .divider{max-width:1100px; margin:22px auto 0; padding:0 20px; font-family:system-ui; font-size:13px; letter-spacing:.12em; text-transform:uppercase; opacity:.7}
+  #toast{position:fixed; left:50%; bottom:22px; transform:translateX(-50%); background:var(--ink); color:var(--paper); padding:10px 16px; border-radius:100px; font-family:system-ui; display:none}
+</style>
+</head>
+<body>
+<header>
+  <div style="flex:1; min-width:260px">
+    <div class="badge">Remotion style • Paper cut-out • App</div>
+    <h1>PaperCut <span>Studio</span></h1>
+    <p class="sub">Namaste! Ye ek motion-graphics video maker demo hai — kagaz (paper cut-out) style me. Play dabao, timeline ghumao, scene badlo. Neeche Remotion jaisa code bhi milega taaki aap asli video render kar sako.</p>
+  </div>
+</header>
+<section class="hero-wrap" aria-label="Rendered Shorts video">
+  <div class="hero-player">
+    <video id="shortVideo" controls playsinline preload="metadata" poster="media/chapter-5-steps-poster.jpg">
+      <source src="media/chapter-5-steps.mp4" type="video/mp4">
+      Aapka browser HTML5 video support nahi karta. <a href="media/chapter-5-steps.mp4">MP4 download karo</a>.
+    </video>
+  </div>
+  <aside class="hero-info">
+    <div class="badge">New • YouTube Shorts • 9:16</div>
+    <h2>Complete Any Chapter — 5 Steps</h2>
+    <p class="sub">Pura Shorts yahin: paper cut-out style, Hinglish male voice-over, karaoke captions aur full sound design. Remotion se fully rendered — koi editor timeline nahi, sab code.</p>
+    <div class="chiprow">
+      <span class="chip">Runtime 95s</span><span class="chip">1080&times;1920</span><span class="chip">30 fps</span><span class="chip">Hinglish VO</span><span class="chip">2849 frames</span><span class="chip">33.6 MB</span>
+    </div>
+    <div>
+      <a class="btn" href="media/chapter-5-steps.mp4" download>Download MP4</a>
+      <a class="btn" style="background:var(--accent2)" href="media/chapter-5-steps-poster.jpg" target="_blank" rel="noopener">Poster PNG</a>
+    </div>
+    <p class="cr">Script, voice-over, SFX aur render: <code>remotion/</code> (Remotion 4.0.535). Music: "Carefree" — Kevin MacLeod (incompetech.com), CC BY 4.0. Fonts: Anton, Archivo Black, Inter, Baloo 2 (OFL). SFX synthesized in-project. Poori list: CREDITS.txt</p>
+  </aside>
+</section>
+<div class="divider">Interactive demo — paper cut-out playground</div>
+<main>
+  <section class="stage-wrap" aria-label="Paper cutout stage">
+    <div class="stage-top"><div class="dots"><i style="background:#e4572e"></i><i style="background:#f2b134"></i><i style="background:#7fb8ad"></i></div><div id="tc">00:00 / 00:10 • 30fps • 1440×900</div><div>● REC</div></div>
+    <div id="stage">
+      <div class="layer" id="skyLayer"><div class="sun" id="sun"></div>
+        <div class="cloud c1" id="cloud1"></div><div class="cloud c2" id="cloud2"></div>
+        <div class="bird" id="bird1">﹏𓅪</div><div class="bird" id="bird2">﹏𓅪</div>
+      </div>
+      <div class="mount m1 layer" id="m1"></div>
+      <div class="mount m2 layer" id="m2"></div>
+      <div class="mount m3 layer" id="m3"></div>
+      <div class="ground"></div>
+      <div class="river" id="river"></div>
+      <div class="tree" style="left:8%" id="t1"><div class="top"></div><div class="trunk"></div></div>
+      <div class="tree" style="right:10%" id="t2"><div class="top" style="background:#3d6b3a"></div><div class="trunk"></div></div>
+      <div class="tree" style="right:22%; transform:scale(.8)" id="t3"><div class="top" style="background:#4a7c43"></div><div class="trunk"></div></div>
+      <div class="title-card" id="titleCard"><small id="kicker">SCENE 01 • SUBAH</small><h2 id="titleText">Kagaz ki Subah</h2></div>
+      <div class="grain"></div>
+    </div>
+    <div class="controls">
+      <div class="row">
+        <button class="primary" id="playBtn">▶ Play</button>
+        <input type="range" id="seek" min="0" max="300" value="0" aria-label="Timeline">
+        <button id="snapBtn">📸 Snapshot</button>
+      </div>
+      <div class="scenes">
+        <button data-scene="morning" class="sel">🌅 Subah</button>
+        <button data-scene="evening">🌇 Shaam</button>
+        <button data-scene="night">🌌 Raat</button>
+        <button id="speedBtn">Speed: 1×</button>
+      </div>
+      <div class="meta"><span id="frameLabel">frame 0 / 300</span><span>loop • paper-shake • parallax</span></div>
+    </div>
+  </section>
+  <aside class="panel">
+    <h3>🎬 Remotion Export • Paper Cutout</h3>
+    <div class="body">
+      <div class="layers">
+        <label><input type="checkbox" checked data-layer="cloud1"> Badal (clouds)</label>
+        <label><input type="checkbox" checked data-layer="titleCard"> Title card</label>
+        <label><input type="checkbox" checked data-layer="river"> Nadi (river)</label>
+        <label><input type="checkbox" id="shakeChk" checked> Paper-shake (handmade feel)</label>
+      </div>
+      <p>Asli <b>Remotion</b> video ke liye ye React code use karo:</p>
+      <pre id="codeBox">&lt;Composition id="PaperCut" durationInFrames={300} fps={30} width={1440} height={900} component={PaperCut} /&gt;
+
+const PaperCut = () =&gt; {
+  const f = useCurrentFrame();
+  const sunY = interpolate(f, [0,300], [-40, 60]);
+  return (&lt;AbsoluteFill style={{background:"#bfe3ec"}}&gt;
+    &lt;Cloud x={interpolate(f,[0,300],[0,400])} /&gt;
+    &lt;Mountains parallax={f*0.4} /&gt;
+    &lt;Title opacity={interpolate(f,[0,30],[0,1])} /&gt;
+  &lt;/AbsoluteFill&gt;);
+};</pre>
+      <div class="row">
+        <button class="dark" id="copyBtn">Copy Remotion Code</button>
+        <button id="dlBtn">⬇ HTML Download</button>
+      </div>
+      <p style="font-size:13px">Tip: Snapshot se PNG lo, ya poora HTML download karke Remotion me recreate karo. Ye demo 10-sec loop hai — 30fps.</p>
+    </div>
+  </aside>
+</main>
+<footer>Made with ✂️ kagaz + ❤️ motion — static preview, no server needed. Shorts render: <code>remotion/</code> → <code>media/chapter-5-steps.mp4</code> (<code>npm run render</code>). Music/font credits: <code>CREDITS.txt</code>.</footer>
+<div id="toast"></div>
+<script>
+(function(){
+  const D=300; let frame=0, playing=true, speed=1, scene='morning';
+  const $=id=>document.getElementById(id);
+  const playBtn=$('playBtn'), seek=$('seek'), tc=$('tc'), fl=$('frameLabel'), titleText=$('titleText'), kicker=$('kicker');
+  const sun=$('sun'), c1=$('cloud1'), c2=$('cloud2'), b1=$('bird1'), b2=$('bird2'), m1=$('m1'), m2=$('m2'), m3=$('m3'), stage=$('stage'), titleCard=$('titleCard'), river=$('river');
+  const scenes={
+    morning:{sky:['#bfe3ec','#e8f3e8'], sun:'#f2b134', k:'SCENE 01 • SUBAH', t:'Kagaz ki Subah'},
+    evening:{sky:['#f7c873','#f2a06b'], sun:'#e4572e', k:'SCENE 02 • SHAAM', t:'Kagaz ki Shaam'},
+    night:{sky:['#29335c','#5a6ea3'], sun:'#efe3cb', k:'SCENE 03 • RAAT', t:'Kagaz ki Raat'}
+  };
+  function toast(m){const t=$('toast'); t.textContent=m; t.style.display='block'; clearTimeout(t._h); t._h=setTimeout(()=>t.style.display='none',1800);}
+  function setScene(s){ scene=s; const sc=scenes[s];
+    stage.style.background=`linear-gradient(180deg,${sc.sky[0]},${sc.sky[1]} 62%, #f6efe0 62%)`;
+    sun.style.background=`radial-gradient(circle at 35% 35%, #fff, ${sc.sun})`;
+    kicker.textContent=sc.k; titleText.textContent=sc.t;
+    document.querySelectorAll('.scenes button[data-scene]').forEach(b=>b.classList.toggle('sel', b.dataset.scene===s));
+  }
+  document.querySelectorAll('.scenes button[data-scene]').forEach(b=>b.onclick=()=>{setScene(b.dataset.scene); toast('Scene: '+b.textContent.trim());});
+  $('speedBtn').onclick=e=>{ speed=speed===1?2:speed===2?0.5:1; e.target.textContent='Speed: '+speed+'×'; };
+  playBtn.onclick=()=>{ playing=!playing; playBtn.textContent=playing?'⏸ Pause':'▶ Play'; };
+  seek.oninput=()=>{ frame=+seek.value; };
+  document.querySelectorAll('[data-layer]').forEach(ch=>{ ch.onchange=()=>{ const el=$(ch.dataset.layer); if(el) el.style.display=ch.checked?'':'none'; }; });
+  $('copyBtn').onclick=async()=>{ try{ await navigator.clipboard.writeText($('codeBox').textContent); toast('Remotion code copied!'); }catch{ toast('Copy failed — select manually'); } };
+  $('dlBtn').onclick=()=>{ const b=new Blob([document.documentElement.outerHTML],{type:'text/html'}); const a=document.createElement('a'); a.href=URL.createObjectURL(b); a.download='papercut-studio.html'; a.click(); toast('HTML downloaded'); };
+  $('snapBtn').onclick=()=>{ toast('Snapshot: right-click → Save image (static demo)'); };
+  function fmt(f){ const s=Math.floor(f/30); return '00:'+String(s).padStart(2,'0')+' / 00:10'; }
+  let last=performance.now(), acc=0;
+  function tick(now){
+    const dt=Math.min(100, now-last); last=now;
+    if(playing){ acc+=dt*speed; const step=1000/30;
+      while(acc>=step){ acc-=step; frame=(frame+1)%(D+1); }
+      seek.value=frame; tc.textContent=fmt(frame)+' • 30fps • 1440×900'; fl.textContent=`frame ${frame} / ${D}`;
+    }
+    const f=frame, shake=$('shakeChk').checked ? Math.sin(f*.9)*1.6 : 0;
+    sun.style.transform=`translateY(${ (f/D)*60-20 }px) rotate(${f*.15}deg)`;
+    c1.style.transform=`translateX(${(f/D)*220-60}px) translateY(${Math.sin(f*.08)*6}px) rotate(-1deg)`;
+    c2.style.transform=`translateX(${(f/D)*-160+40}px) scale(.85)`;
+    b1.style.left=(8+(f/D)*70)+'%'; b1.style.top=(88-Math.sin(f*.12)*14)+'px';
+    b2.style.left=(20+(f/D)*60)+'%'; b2.style.top=(112-Math.cos(f*.1)*12)+'px';
+    m1.style.transform=`translateX(${(f/D)*-26}px)`; m2.style.transform=`translateX(${(f/D)*-44}px)`; m3.style.transform=`translateX(${(f/D)*-70}px)`;
+    river.style.backgroundPosition=`${(f*2)%100}px 0`;
+    titleCard.style.transform=`rotate(-2deg) translateY(${Math.sin(f*.15)*3+shake}px)`;
+    titleCard.style.opacity=Math.min(1, f/24);
+    stage.style.transform=`translate(${shake*.4}px,0)`;
+    requestAnimationFrame(tick);
+  }
+  setScene('morning'); requestAnimationFrame(tick);
+})();
+</script>
+</body>
+</html>

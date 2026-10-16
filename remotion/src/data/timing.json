@@ -1,0 +1,1800 @@
+{
+  "fps": 30,
+  "voice": "hi-IN-MadhurNeural",
+  "rate": "+35%",
+  "totalDurationFrames": 2849,
+  "segments": [
+    {
+      "id": "hook",
+      "scene": "hook",
+      "audio": "vo/hook.mp3",
+      "startFrame": 0,
+      "durationFrames": 80,
+      "words": [
+        {
+          "text": "complete",
+          "startFrame": 3,
+          "endFrame": 13
+        },
+        {
+          "text": "any",
+          "startFrame": 15,
+          "endFrame": 21
+        },
+        {
+          "text": "chapter",
+          "startFrame": 21,
+          "endFrame": 33
+        },
+        {
+          "text": "sirf",
+          "startFrame": 36,
+          "endFrame": 45
+        },
+        {
+          "text": "paanch",
+          "startFrame": 45,
+          "endFrame": 54
+        },
+        {
+          "text": "steps",
+          "startFrame": 54,
+          "endFrame": 63
+        },
+        {
+          "text": "mein",
+          "startFrame": 63,
+          "endFrame": 70
+        }
+      ],
+      "alignment": "index"
+    },
+    {
+      "id": "problem",
+      "scene": "problem",
+      "audio": "vo/problem.mp3",
+      "startFrame": 84,
+      "durationFrames": 161,
+      "words": [
+        {
+          "text": "samajh",
+          "startFrame": 3,
+          "endFrame": 13
+        },
+        {
+          "text": "nahi",
+          "startFrame": 13,
+          "endFrame": 19
+        },
+        {
+          "text": "aata",
+          "startFrame": 20,
+          "endFrame": 26
+        },
+        {
+          "text": "kahan",
+          "startFrame": 26,
+          "endFrame": 34
+        },
+        {
+          "text": "se",
+          "startFrame": 34,
+          "endFrame": 37
+        },
+        {
+          "text": "start",
+          "startFrame": 37,
+          "endFrame": 46
+        },
+        {
+          "text": "karein",
+          "startFrame": 46,
+          "endFrame": 55
+        },
+        {
+          "text": "kya",
+          "startFrame": 56,
+          "endFrame": 61
+        },
+        {
+          "text": "padhein",
+          "startFrame": 61,
+          "endFrame": 69
+        },
+        {
+          "text": "kaise",
+          "startFrame": 71,
+          "endFrame": 79
+        },
+        {
+          "text": "padhein",
+          "startFrame": 79,
+          "endFrame": 88
+        },
+        {
+          "text": "to",
+          "startFrame": 110,
+          "endFrame": 114
+        },
+        {
+          "text": "ye",
+          "startFrame": 114,
+          "endFrame": 118
+        },
+        {
+          "text": "video",
+          "startFrame": 118,
+          "endFrame": 127
+        },
+        {
+          "text": "skip",
+          "startFrame": 128,
+          "endFrame": 136
+        },
+        {
+          "text": "mat",
+          "startFrame": 136,
+          "endFrame": 141
+        },
+        {
+          "text": "karna",
+          "startFrame": 142,
+          "endFrame": 151
+        }
+      ],
+      "alignment": "index"
+    },
+    {
+      "id": "roadmap",
+      "scene": "roadmap",
+      "audio": "vo/roadmap.mp3",
+      "startFrame": 249,
+      "durationFrames": 205,
+      "words": [
+        {
+          "text": "kyunki",
+          "startFrame": 3,
+          "endFrame": 12
+        },
+        {
+          "text": "aaj",
+          "startFrame": 13,
+          "endFrame": 20
+        },
+        {
+          "text": "main",
+          "startFrame": 20,
+          "endFrame": 25
+        },
+        {
+          "text": "tumhare",
+          "startFrame": 25,
+          "endFrame": 37
+        },
+        {
+          "text": "liye",
+          "startFrame": 38,
+          "endFrame": 43
+        },
+        {
+          "text": "laaya",
+          "startFrame": 43,
+          "endFrame": 51
+        },
+        {
+          "text": "hoon",
+          "startFrame": 51,
+          "endFrame": 56
+        },
+        {
+          "text": "ek",
+          "startFrame": 58,
+          "endFrame": 63
+        },
+        {
+          "text": "simple",
+          "startFrame": 63,
+          "endFrame": 73
+        },
+        {
+          "text": "paanch",
+          "startFrame": 73,
+          "endFrame": 82
+        },
+        {
+          "text": "step",
+          "startFrame": 82,
+          "endFrame": 89
+        },
+        {
+          "text": "roadmap",
+          "startFrame": 90,
+          "endFrame": 103
+        },
+        {
+          "text": "jisse",
+          "startFrame": 107,
+          "endFrame": 116
+        },
+        {
+          "text": "kisi",
+          "startFrame": 116,
+          "endFrame": 125
+        },
+        {
+          "text": "bhi",
+          "startFrame": 125,
+          "endFrame": 128
+        },
+        {
+          "text": "chapter",
+          "startFrame": 129,
+          "endFrame": 140
+        },
+        {
+          "text": "ko",
+          "startFrame": 140,
+          "endFrame": 144
+        },
+        {
+          "text": "systematically",
+          "startFrame": 144,
+          "endFrame": 163
+        },
+        {
+          "text": "complete",
+          "startFrame": 164,
+          "endFrame": 175
+        },
+        {
+          "text": "kar",
+          "startFrame": 176,
+          "endFrame": 180
+        },
+        {
+          "text": "sakte",
+          "startFrame": 180,
+          "endFrame": 189
+        },
+        {
+          "text": "ho",
+          "startFrame": 189,
+          "endFrame": 195
+        }
+      ],
+      "alignment": "index"
+    },
+    {
+      "id": "step1",
+      "scene": "step1",
+      "audio": "vo/step1.mp3",
+      "startFrame": 458,
+      "durationFrames": 243,
+      "words": [
+        {
+          "text": "step",
+          "startFrame": 3,
+          "endFrame": 11
+        },
+        {
+          "text": "one",
+          "startFrame": 11,
+          "endFrame": 18
+        },
+        {
+          "text": "apna",
+          "startFrame": 21,
+          "endFrame": 29
+        },
+        {
+          "text": "chapter",
+          "startFrame": 30,
+          "endFrame": 40
+        },
+        {
+          "text": "choose",
+          "startFrame": 40,
+          "endFrame": 49
+        },
+        {
+          "text": "karo",
+          "startFrame": 49,
+          "endFrame": 57
+        },
+        {
+          "text": "tay",
+          "startFrame": 78,
+          "endFrame": 82
+        },
+        {
+          "text": "karo",
+          "startFrame": 83,
+          "endFrame": 90
+        },
+        {
+          "text": "kaun",
+          "startFrame": 90,
+          "endFrame": 97
+        },
+        {
+          "text": "sa",
+          "startFrame": 97,
+          "endFrame": 102
+        },
+        {
+          "text": "chapter",
+          "startFrame": 102,
+          "endFrame": 113
+        },
+        {
+          "text": "hai",
+          "startFrame": 113,
+          "endFrame": 119
+        },
+        {
+          "text": "aur",
+          "startFrame": 125,
+          "endFrame": 129
+        },
+        {
+          "text": "kab",
+          "startFrame": 129,
+          "endFrame": 135
+        },
+        {
+          "text": "tak",
+          "startFrame": 135,
+          "endFrame": 141
+        },
+        {
+          "text": "khatam",
+          "startFrame": 141,
+          "endFrame": 149
+        },
+        {
+          "text": "karna",
+          "startFrame": 149,
+          "endFrame": 158
+        },
+        {
+          "text": "hai",
+          "startFrame": 158,
+          "endFrame": 165
+        },
+        {
+          "text": "target",
+          "startFrame": 184,
+          "endFrame": 194
+        },
+        {
+          "text": "aur",
+          "startFrame": 195,
+          "endFrame": 200
+        },
+        {
+          "text": "deadline",
+          "startFrame": 200,
+          "endFrame": 213
+        },
+        {
+          "text": "fix",
+          "startFrame": 213,
+          "endFrame": 221
+        },
+        {
+          "text": "kar",
+          "startFrame": 222,
+          "endFrame": 226
+        },
+        {
+          "text": "lo",
+          "startFrame": 226,
+          "endFrame": 233
+        }
+      ],
+      "alignment": "index"
+    },
+    {
+      "id": "step2",
+      "scene": "step2",
+      "audio": "vo/step2.mp3",
+      "startFrame": 705,
+      "durationFrames": 292,
+      "words": [
+        {
+          "text": "step",
+          "startFrame": 3,
+          "endFrame": 11
+        },
+        {
+          "text": "two",
+          "startFrame": 11,
+          "endFrame": 16
+        },
+        {
+          "text": "saare",
+          "startFrame": 19,
+          "endFrame": 28
+        },
+        {
+          "text": "resources",
+          "startFrame": 28,
+          "endFrame": 44
+        },
+        {
+          "text": "ek",
+          "startFrame": 46,
+          "endFrame": 51
+        },
+        {
+          "text": "jagah",
+          "startFrame": 51,
+          "endFrame": 59
+        },
+        {
+          "text": "collect",
+          "startFrame": 59,
+          "endFrame": 68
+        },
+        {
+          "text": "karo",
+          "startFrame": 69,
+          "endFrame": 77
+        },
+        {
+          "text": "books",
+          "startFrame": 98,
+          "endFrame": 106
+        },
+        {
+          "text": "notes",
+          "startFrame": 107,
+          "endFrame": 117
+        },
+        {
+          "text": "pdfs",
+          "startFrame": 121,
+          "endFrame": 135
+        },
+        {
+          "text": "lectures",
+          "startFrame": 136,
+          "endFrame": 151
+        },
+        {
+          "text": "jo",
+          "startFrame": 154,
+          "endFrame": 160
+        },
+        {
+          "text": "bhi",
+          "startFrame": 160,
+          "endFrame": 164
+        },
+        {
+          "text": "chahiye",
+          "startFrame": 164,
+          "endFrame": 175
+        },
+        {
+          "text": "pehle",
+          "startFrame": 180,
+          "endFrame": 188
+        },
+        {
+          "text": "se",
+          "startFrame": 188,
+          "endFrame": 192
+        },
+        {
+          "text": "ready",
+          "startFrame": 192,
+          "endFrame": 200
+        },
+        {
+          "text": "rakho",
+          "startFrame": 200,
+          "endFrame": 209
+        },
+        {
+          "text": "taaki",
+          "startFrame": 214,
+          "endFrame": 222
+        },
+        {
+          "text": "padhte",
+          "startFrame": 223,
+          "endFrame": 233
+        },
+        {
+          "text": "waqt",
+          "startFrame": 233,
+          "endFrame": 240
+        },
+        {
+          "text": "dhoondhne",
+          "startFrame": 240,
+          "endFrame": 251
+        },
+        {
+          "text": "mein",
+          "startFrame": 251,
+          "endFrame": 254
+        },
+        {
+          "text": "time",
+          "startFrame": 254,
+          "endFrame": 262
+        },
+        {
+          "text": "waste",
+          "startFrame": 262,
+          "endFrame": 270
+        },
+        {
+          "text": "na",
+          "startFrame": 271,
+          "endFrame": 275
+        },
+        {
+          "text": "ho",
+          "startFrame": 275,
+          "endFrame": 282
+        }
+      ],
+      "alignment": "index"
+    },
+    {
+      "id": "step3",
+      "scene": "step3",
+      "audio": "vo/step3.mp3",
+      "startFrame": 1001,
+      "durationFrames": 419,
+      "words": [
+        {
+          "text": "step",
+          "startFrame": 3,
+          "endFrame": 10
+        },
+        {
+          "text": "three",
+          "startFrame": 11,
+          "endFrame": 19
+        },
+        {
+          "text": "pehle",
+          "startFrame": 20,
+          "endFrame": 29
+        },
+        {
+          "text": "chapter",
+          "startFrame": 29,
+          "endFrame": 41
+        },
+        {
+          "text": "ka",
+          "startFrame": 41,
+          "endFrame": 45
+        },
+        {
+          "text": "overview",
+          "startFrame": 47,
+          "endFrame": 60
+        },
+        {
+          "text": "lo",
+          "startFrame": 60,
+          "endFrame": 66
+        },
+        {
+          "text": "ek",
+          "startFrame": 88,
+          "endFrame": 92
+        },
+        {
+          "text": "baar",
+          "startFrame": 94,
+          "endFrame": 101
+        },
+        {
+          "text": "quickly",
+          "startFrame": 101,
+          "endFrame": 111
+        },
+        {
+          "text": "read",
+          "startFrame": 111,
+          "endFrame": 117
+        },
+        {
+          "text": "kar",
+          "startFrame": 117,
+          "endFrame": 122
+        },
+        {
+          "text": "lo",
+          "startFrame": 122,
+          "endFrame": 129
+        },
+        {
+          "text": "ya",
+          "startFrame": 132,
+          "endFrame": 137
+        },
+        {
+          "text": "pdf",
+          "startFrame": 137,
+          "endFrame": 151
+        },
+        {
+          "text": "kisi",
+          "startFrame": 151,
+          "endFrame": 159
+        },
+        {
+          "text": "ai",
+          "startFrame": 161,
+          "endFrame": 169
+        },
+        {
+          "text": "tool",
+          "startFrame": 170,
+          "endFrame": 176
+        },
+        {
+          "text": "ko",
+          "startFrame": 176,
+          "endFrame": 180
+        },
+        {
+          "text": "de",
+          "startFrame": 180,
+          "endFrame": 184
+        },
+        {
+          "text": "do",
+          "startFrame": 184,
+          "endFrame": 191
+        },
+        {
+          "text": "aur",
+          "startFrame": 195,
+          "endFrame": 199
+        },
+        {
+          "text": "topic-wise",
+          "startFrame": 199,
+          "endFrame": 217
+        },
+        {
+          "text": "overview",
+          "startFrame": 219,
+          "endFrame": 231
+        },
+        {
+          "text": "nikalwa",
+          "startFrame": 231,
+          "endFrame": 242
+        },
+        {
+          "text": "lo",
+          "startFrame": 242,
+          "endFrame": 249
+        },
+        {
+          "text": "abhi",
+          "startFrame": 270,
+          "endFrame": 277
+        },
+        {
+          "text": "kuch",
+          "startFrame": 277,
+          "endFrame": 284
+        },
+        {
+          "text": "yaad",
+          "startFrame": 284,
+          "endFrame": 291
+        },
+        {
+          "text": "nahi",
+          "startFrame": 291,
+          "endFrame": 297
+        },
+        {
+          "text": "karna",
+          "startFrame": 297,
+          "endFrame": 307
+        },
+        {
+          "text": "bas",
+          "startFrame": 311,
+          "endFrame": 318
+        },
+        {
+          "text": "samajhna",
+          "startFrame": 318,
+          "endFrame": 331
+        },
+        {
+          "text": "hai",
+          "startFrame": 331,
+          "endFrame": 336
+        },
+        {
+          "text": "ki",
+          "startFrame": 339,
+          "endFrame": 342
+        },
+        {
+          "text": "chapter",
+          "startFrame": 343,
+          "endFrame": 354
+        },
+        {
+          "text": "mein",
+          "startFrame": 354,
+          "endFrame": 358
+        },
+        {
+          "text": "kaun",
+          "startFrame": 358,
+          "endFrame": 365
+        },
+        {
+          "text": "kaun",
+          "startFrame": 366,
+          "endFrame": 373
+        },
+        {
+          "text": "se",
+          "startFrame": 373,
+          "endFrame": 376
+        },
+        {
+          "text": "concepts",
+          "startFrame": 377,
+          "endFrame": 391
+        },
+        {
+          "text": "hain",
+          "startFrame": 391,
+          "endFrame": 409
+        }
+      ],
+      "alignment": "index"
+    },
+    {
+      "id": "step4",
+      "scene": "step4",
+      "audio": "vo/step4.mp3",
+      "startFrame": 1424,
+      "durationFrames": 399,
+      "words": [
+        {
+          "text": "step",
+          "startFrame": 3,
+          "endFrame": 10
+        },
+        {
+          "text": "four",
+          "startFrame": 10,
+          "endFrame": 18
+        },
+        {
+          "text": "ek",
+          "startFrame": 21,
+          "endFrame": 26
+        },
+        {
+          "text": "time",
+          "startFrame": 27,
+          "endFrame": 35
+        },
+        {
+          "text": "pe",
+          "startFrame": 35,
+          "endFrame": 39
+        },
+        {
+          "text": "ek",
+          "startFrame": 41,
+          "endFrame": 46
+        },
+        {
+          "text": "concept",
+          "startFrame": 46,
+          "endFrame": 58
+        },
+        {
+          "text": "uthao",
+          "startFrame": 59,
+          "endFrame": 70
+        },
+        {
+          "text": "acche",
+          "startFrame": 91,
+          "endFrame": 99
+        },
+        {
+          "text": "se",
+          "startFrame": 99,
+          "endFrame": 103
+        },
+        {
+          "text": "samjho",
+          "startFrame": 103,
+          "endFrame": 115
+        },
+        {
+          "text": "aur",
+          "startFrame": 119,
+          "endFrame": 123
+        },
+        {
+          "text": "phir",
+          "startFrame": 124,
+          "endFrame": 130
+        },
+        {
+          "text": "bina",
+          "startFrame": 130,
+          "endFrame": 137
+        },
+        {
+          "text": "dekhe",
+          "startFrame": 137,
+          "endFrame": 146
+        },
+        {
+          "text": "apne",
+          "startFrame": 147,
+          "endFrame": 156
+        },
+        {
+          "text": "words",
+          "startFrame": 156,
+          "endFrame": 166
+        },
+        {
+          "text": "mein",
+          "startFrame": 166,
+          "endFrame": 170
+        },
+        {
+          "text": "explain",
+          "startFrame": 171,
+          "endFrame": 182
+        },
+        {
+          "text": "karo",
+          "startFrame": 182,
+          "endFrame": 190
+        },
+        {
+          "text": "agar",
+          "startFrame": 212,
+          "endFrame": 219
+        },
+        {
+          "text": "khud",
+          "startFrame": 219,
+          "endFrame": 225
+        },
+        {
+          "text": "explain",
+          "startFrame": 227,
+          "endFrame": 239
+        },
+        {
+          "text": "kar",
+          "startFrame": 240,
+          "endFrame": 244
+        },
+        {
+          "text": "paate",
+          "startFrame": 244,
+          "endFrame": 253
+        },
+        {
+          "text": "ho",
+          "startFrame": 253,
+          "endFrame": 259
+        },
+        {
+          "text": "to",
+          "startFrame": 262,
+          "endFrame": 266
+        },
+        {
+          "text": "concept",
+          "startFrame": 266,
+          "endFrame": 279
+        },
+        {
+          "text": "clear",
+          "startFrame": 281,
+          "endFrame": 288
+        },
+        {
+          "text": "hai",
+          "startFrame": 288,
+          "endFrame": 296
+        },
+        {
+          "text": "aise",
+          "startFrame": 326,
+          "endFrame": 334
+        },
+        {
+          "text": "hi",
+          "startFrame": 335,
+          "endFrame": 338
+        },
+        {
+          "text": "ek",
+          "startFrame": 340,
+          "endFrame": 346
+        },
+        {
+          "text": "ek",
+          "startFrame": 347,
+          "endFrame": 352
+        },
+        {
+          "text": "concept",
+          "startFrame": 352,
+          "endFrame": 365
+        },
+        {
+          "text": "cover",
+          "startFrame": 366,
+          "endFrame": 373
+        },
+        {
+          "text": "karte",
+          "startFrame": 373,
+          "endFrame": 381
+        },
+        {
+          "text": "jao",
+          "startFrame": 381,
+          "endFrame": 389
+        }
+      ],
+      "alignment": "index"
+    },
+    {
+      "id": "step5",
+      "scene": "step5",
+      "audio": "vo/step5.mp3",
+      "startFrame": 1827,
+      "durationFrames": 361,
+      "words": [
+        {
+          "text": "step",
+          "startFrame": 3,
+          "endFrame": 10
+        },
+        {
+          "text": "five",
+          "startFrame": 10,
+          "endFrame": 20
+        },
+        {
+          "text": "khud",
+          "startFrame": 22,
+          "endFrame": 28
+        },
+        {
+          "text": "ka",
+          "startFrame": 28,
+          "endFrame": 32
+        },
+        {
+          "text": "test",
+          "startFrame": 32,
+          "endFrame": 39
+        },
+        {
+          "text": "lo",
+          "startFrame": 39,
+          "endFrame": 46
+        },
+        {
+          "text": "chhota",
+          "startFrame": 67,
+          "endFrame": 76
+        },
+        {
+          "text": "mock",
+          "startFrame": 76,
+          "endFrame": 82
+        },
+        {
+          "text": "test",
+          "startFrame": 82,
+          "endFrame": 89
+        },
+        {
+          "text": "do",
+          "startFrame": 90,
+          "endFrame": 97
+        },
+        {
+          "text": "ya",
+          "startFrame": 101,
+          "endFrame": 105
+        },
+        {
+          "text": "chatgpt",
+          "startFrame": 105,
+          "endFrame": 124
+        },
+        {
+          "text": "se",
+          "startFrame": 124,
+          "endFrame": 128
+        },
+        {
+          "text": "concept-wise",
+          "startFrame": 128,
+          "endFrame": 149
+        },
+        {
+          "text": "test",
+          "startFrame": 149,
+          "endFrame": 156
+        },
+        {
+          "text": "banwao",
+          "startFrame": 156,
+          "endFrame": 168
+        },
+        {
+          "text": "bina",
+          "startFrame": 189,
+          "endFrame": 196
+        },
+        {
+          "text": "notes",
+          "startFrame": 196,
+          "endFrame": 205
+        },
+        {
+          "text": "dekhe",
+          "startFrame": 205,
+          "endFrame": 214
+        },
+        {
+          "text": "solve",
+          "startFrame": 214,
+          "endFrame": 223
+        },
+        {
+          "text": "karo",
+          "startFrame": 223,
+          "endFrame": 231
+        },
+        {
+          "text": "mistakes",
+          "startFrame": 234,
+          "endFrame": 247
+        },
+        {
+          "text": "check",
+          "startFrame": 247,
+          "endFrame": 253
+        },
+        {
+          "text": "karo",
+          "startFrame": 253,
+          "endFrame": 262
+        },
+        {
+          "text": "aur",
+          "startFrame": 267,
+          "endFrame": 271
+        },
+        {
+          "text": "jahan",
+          "startFrame": 271,
+          "endFrame": 278
+        },
+        {
+          "text": "problem",
+          "startFrame": 278,
+          "endFrame": 289
+        },
+        {
+          "text": "aaye",
+          "startFrame": 289,
+          "endFrame": 295
+        },
+        {
+          "text": "us",
+          "startFrame": 301,
+          "endFrame": 305
+        },
+        {
+          "text": "concept",
+          "startFrame": 306,
+          "endFrame": 316
+        },
+        {
+          "text": "ko",
+          "startFrame": 317,
+          "endFrame": 321
+        },
+        {
+          "text": "dobara",
+          "startFrame": 321,
+          "endFrame": 333
+        },
+        {
+          "text": "revise",
+          "startFrame": 333,
+          "endFrame": 343
+        },
+        {
+          "text": "karo",
+          "startFrame": 344,
+          "endFrame": 351
+        }
+      ],
+      "alignment": "index"
+    },
+    {
+      "id": "bonus",
+      "scene": "bonus",
+      "audio": "vo/bonus.mp3",
+      "startFrame": 2192,
+      "durationFrames": 270,
+      "words": [
+        {
+          "text": "bonus",
+          "startFrame": 3,
+          "endFrame": 13
+        },
+        {
+          "text": "tip",
+          "startFrame": 13,
+          "endFrame": 20
+        },
+        {
+          "text": "agar",
+          "startFrame": 25,
+          "endFrame": 31
+        },
+        {
+          "text": "notes",
+          "startFrame": 31,
+          "endFrame": 40
+        },
+        {
+          "text": "banane",
+          "startFrame": 40,
+          "endFrame": 51
+        },
+        {
+          "text": "hain",
+          "startFrame": 51,
+          "endFrame": 57
+        },
+        {
+          "text": "to",
+          "startFrame": 61,
+          "endFrame": 66
+        },
+        {
+          "text": "concept",
+          "startFrame": 66,
+          "endFrame": 78
+        },
+        {
+          "text": "samajhte",
+          "startFrame": 79,
+          "endFrame": 92
+        },
+        {
+          "text": "waqt",
+          "startFrame": 92,
+          "endFrame": 100
+        },
+        {
+          "text": "uski",
+          "startFrame": 101,
+          "endFrame": 108
+        },
+        {
+          "text": "short",
+          "startFrame": 108,
+          "endFrame": 116
+        },
+        {
+          "text": "summary",
+          "startFrame": 116,
+          "endFrame": 128
+        },
+        {
+          "text": "apne",
+          "startFrame": 129,
+          "endFrame": 137
+        },
+        {
+          "text": "words",
+          "startFrame": 137,
+          "endFrame": 147
+        },
+        {
+          "text": "mein",
+          "startFrame": 147,
+          "endFrame": 150
+        },
+        {
+          "text": "likh",
+          "startFrame": 151,
+          "endFrame": 155
+        },
+        {
+          "text": "lo",
+          "startFrame": 156,
+          "endFrame": 163
+        },
+        {
+          "text": "aur",
+          "startFrame": 185,
+          "endFrame": 188
+        },
+        {
+          "text": "ai",
+          "startFrame": 191,
+          "endFrame": 198
+        },
+        {
+          "text": "se",
+          "startFrame": 198,
+          "endFrame": 202
+        },
+        {
+          "text": "summary",
+          "startFrame": 202,
+          "endFrame": 214
+        },
+        {
+          "text": "chhoti",
+          "startFrame": 214,
+          "endFrame": 222
+        },
+        {
+          "text": "karne",
+          "startFrame": 222,
+          "endFrame": 231
+        },
+        {
+          "text": "mein",
+          "startFrame": 231,
+          "endFrame": 235
+        },
+        {
+          "text": "help",
+          "startFrame": 235,
+          "endFrame": 242
+        },
+        {
+          "text": "le",
+          "startFrame": 242,
+          "endFrame": 246
+        },
+        {
+          "text": "sakte",
+          "startFrame": 246,
+          "endFrame": 254
+        },
+        {
+          "text": "ho",
+          "startFrame": 254,
+          "endFrame": 260
+        }
+      ],
+      "alignment": "index"
+    },
+    {
+      "id": "outro",
+      "scene": "outro",
+      "audio": "vo/outro.mp3",
+      "startFrame": 2466,
+      "durationFrames": 338,
+      "words": [
+        {
+          "text": "to",
+          "startFrame": 3,
+          "endFrame": 6
+        },
+        {
+          "text": "ye",
+          "startFrame": 6,
+          "endFrame": 11
+        },
+        {
+          "text": "tha",
+          "startFrame": 11,
+          "endFrame": 17
+        },
+        {
+          "text": "kisi",
+          "startFrame": 17,
+          "endFrame": 25
+        },
+        {
+          "text": "bhi",
+          "startFrame": 25,
+          "endFrame": 29
+        },
+        {
+          "text": "chapter",
+          "startFrame": 29,
+          "endFrame": 40
+        },
+        {
+          "text": "ko",
+          "startFrame": 40,
+          "endFrame": 45
+        },
+        {
+          "text": "complete",
+          "startFrame": 45,
+          "endFrame": 57
+        },
+        {
+          "text": "karne",
+          "startFrame": 57,
+          "endFrame": 65
+        },
+        {
+          "text": "ka",
+          "startFrame": 65,
+          "endFrame": 68
+        },
+        {
+          "text": "paanch",
+          "startFrame": 68,
+          "endFrame": 76
+        },
+        {
+          "text": "step",
+          "startFrame": 76,
+          "endFrame": 83
+        },
+        {
+          "text": "roadmap",
+          "startFrame": 84,
+          "endFrame": 98
+        },
+        {
+          "text": "aur",
+          "startFrame": 118,
+          "endFrame": 121
+        },
+        {
+          "text": "bade",
+          "startFrame": 123,
+          "endFrame": 129
+        },
+        {
+          "text": "chapter",
+          "startFrame": 130,
+          "endFrame": 140
+        },
+        {
+          "text": "ko",
+          "startFrame": 140,
+          "endFrame": 144
+        },
+        {
+          "text": "chhote",
+          "startFrame": 145,
+          "endFrame": 153
+        },
+        {
+          "text": "chhote",
+          "startFrame": 154,
+          "endFrame": 162
+        },
+        {
+          "text": "parts",
+          "startFrame": 162,
+          "endFrame": 172
+        },
+        {
+          "text": "mein",
+          "startFrame": 172,
+          "endFrame": 176
+        },
+        {
+          "text": "kaise",
+          "startFrame": 176,
+          "endFrame": 185
+        },
+        {
+          "text": "break",
+          "startFrame": 185,
+          "endFrame": 192
+        },
+        {
+          "text": "karein",
+          "startFrame": 192,
+          "endFrame": 202
+        },
+        {
+          "text": "wo",
+          "startFrame": 223,
+          "endFrame": 229
+        },
+        {
+          "text": "jaanne",
+          "startFrame": 229,
+          "endFrame": 239
+        },
+        {
+          "text": "ke",
+          "startFrame": 239,
+          "endFrame": 243
+        },
+        {
+          "text": "liye",
+          "startFrame": 244,
+          "endFrame": 248
+        },
+        {
+          "text": "follow",
+          "startFrame": 248,
+          "endFrame": 257
+        },
+        {
+          "text": "karo",
+          "startFrame": 257,
+          "endFrame": 265
+        },
+        {
+          "text": "milte",
+          "startFrame": 287,
+          "endFrame": 297
+        },
+        {
+          "text": "hain",
+          "startFrame": 297,
+          "endFrame": 302
+        },
+        {
+          "text": "next",
+          "startFrame": 302,
+          "endFrame": 311
+        },
+        {
+          "text": "video",
+          "startFrame": 311,
+          "endFrame": 321
+        },
+        {
+          "text": "mein",
+          "startFrame": 321,
+          "endFrame": 328
+        }
+      ],
+      "alignment": "index"
+    }
+  ],
+  "sfx": [
+    {
+      "name": "stamp",
+      "frame": 3,
+      "vol": 0.95
+    },
+    {
+      "name": "rip",
+      "frame": 21,
+      "vol": 0.8
+    },
+    {
+      "name": "whoosh",
+      "frame": 45,
+      "vol": 0.65
+    },
+    {
+      "name": "ding",
+      "frame": 54,
+      "vol": 0.75
+    },
+    {
+      "name": "slap",
+      "frame": 84,
+      "vol": 0.8
+    },
+    {
+      "name": "pop",
+      "frame": 110,
+      "vol": 0.7
+    },
+    {
+      "name": "buzz",
+      "frame": 145,
+      "vol": 0.6
+    },
+    {
+      "name": "pop",
+      "frame": 155,
+      "vol": 0.7
+    },
+    {
+      "name": "rip",
+      "frame": 212,
+      "vol": 0.85
+    },
+    {
+      "name": "whoosh",
+      "frame": 292,
+      "vol": 0.6
+    },
+    {
+      "name": "pop",
+      "frame": 322,
+      "vol": 0.75
+    },
+    {
+      "name": "pop",
+      "frame": 327,
+      "vol": 0.7
+    },
+    {
+      "name": "pop",
+      "frame": 332,
+      "vol": 0.72
+    },
+    {
+      "name": "pop",
+      "frame": 337,
+      "vol": 0.7
+    },
+    {
+      "name": "pop",
+      "frame": 342,
+      "vol": 0.75
+    },
+    {
+      "name": "ding",
+      "frame": 339,
+      "vol": 0.7
+    },
+    {
+      "name": "stamp",
+      "frame": 413,
+      "vol": 0.8
+    },
+    {
+      "name": "whoosh",
+      "frame": 469,
+      "vol": 0.7
+    },
+    {
+      "name": "flip",
+      "frame": 498,
+      "vol": 0.8
+    },
+    {
+      "name": "pop",
+      "frame": 548,
+      "vol": 0.6
+    },
+    {
+      "name": "stamp",
+      "frame": 658,
+      "vol": 0.9
+    },
+    {
+      "name": "ding",
+      "frame": 684,
+      "vol": 0.7
+    },
+    {
+      "name": "whoosh",
+      "frame": 716,
+      "vol": 0.7
+    },
+    {
+      "name": "slap",
+      "frame": 733,
+      "vol": 0.75
+    },
+    {
+      "name": "whoosh",
+      "frame": 803,
+      "vol": 0.5
+    },
+    {
+      "name": "whoosh",
+      "frame": 812,
+      "vol": 0.6
+    },
+    {
+      "name": "whoosh",
+      "frame": 826,
+      "vol": 0.7
+    },
+    {
+      "name": "whoosh",
+      "frame": 841,
+      "vol": 0.8
+    },
+    {
+      "name": "stamp",
+      "frame": 897,
+      "vol": 0.85
+    },
+    {
+      "name": "ding",
+      "frame": 980,
+      "vol": 0.7
+    },
+    {
+      "name": "whoosh",
+      "frame": 1012,
+      "vol": 0.7
+    },
+    {
+      "name": "pop",
+      "frame": 1048,
+      "vol": 0.7
+    },
+    {
+      "name": "flip",
+      "frame": 1112,
+      "vol": 0.8
+    },
+    {
+      "name": "pop",
+      "frame": 1162,
+      "vol": 0.75
+    },
+    {
+      "name": "whoosh",
+      "frame": 1200,
+      "vol": 0.6
+    },
+    {
+      "name": "pop",
+      "frame": 1378,
+      "vol": 0.7
+    },
+    {
+      "name": "stamp",
+      "frame": 1292,
+      "vol": 0.85
+    },
+    {
+      "name": "ding",
+      "frame": 1392,
+      "vol": 0.7
+    },
+    {
+      "name": "whoosh",
+      "frame": 1434,
+      "vol": 0.7
+    },
+    {
+      "name": "flip",
+      "frame": 1470,
+      "vol": 0.8
+    },
+    {
+      "name": "pop",
+      "frame": 1595,
+      "vol": 0.65
+    },
+    {
+      "name": "ding",
+      "frame": 1651,
+      "vol": 0.7
+    },
+    {
+      "name": "tick",
+      "frame": 1805,
+      "vol": 0.8
+    },
+    {
+      "name": "whoosh",
+      "frame": 1837,
+      "vol": 0.7
+    },
+    {
+      "name": "slap",
+      "frame": 1859,
+      "vol": 0.8
+    },
+    {
+      "name": "stamp",
+      "frame": 1903,
+      "vol": 0.8
+    },
+    {
+      "name": "ding",
+      "frame": 2041,
+      "vol": 0.7
+    },
+    {
+      "name": "buzz",
+      "frame": 2061,
+      "vol": 0.65
+    },
+    {
+      "name": "pop",
+      "frame": 2105,
+      "vol": 0.7
+    },
+    {
+      "name": "snip",
+      "frame": 2160,
+      "vol": 0.8
+    },
+    {
+      "name": "slap",
+      "frame": 2195,
+      "vol": 0.85
+    },
+    {
+      "name": "pop",
+      "frame": 2308,
+      "vol": 0.7
+    },
+    {
+      "name": "tick",
+      "frame": 2343,
+      "vol": 0.75
+    },
+    {
+      "name": "snip",
+      "frame": 2406,
+      "vol": 0.7
+    },
+    {
+      "name": "ding",
+      "frame": 2427,
+      "vol": 0.7
+    },
+    {
+      "name": "whoosh",
+      "frame": 2466,
+      "vol": 0.65
+    },
+    {
+      "name": "pop",
+      "frame": 2534,
+      "vol": 0.7
+    },
+    {
+      "name": "ding",
+      "frame": 2550,
+      "vol": 0.7
+    },
+    {
+      "name": "flip",
+      "frame": 2628,
+      "vol": 0.8
+    },
+    {
+      "name": "riser",
+      "frame": 2714,
+      "vol": 0.35
+    },
+    {
+      "name": "stamp",
+      "frame": 2723,
+      "vol": 0.85
+    },
+    {
+      "name": "ding",
+      "frame": 2777,
+      "vol": 0.8
+    }
+  ]
+}
